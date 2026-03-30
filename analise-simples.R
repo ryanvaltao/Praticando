@@ -26,3 +26,11 @@ sd(peso)
 
 summary(n_refeicoes_dia)
 sd(n_refeicoes_dia)
+
+# analise frutas
+
+abacaxi = grepl("Abacaxi", fruta_gosta)
+prop.table(table(abacaxi))
+
+banana = grepl("Banana", fruta_gosta)
+prop.table(table(banana))
