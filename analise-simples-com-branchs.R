@@ -19,10 +19,11 @@ dados$faixa_etaria = factor(dados$faixa_etaria)
 
 #-=-=-=analise descritiva com distribuição de frequencias e com graficos=-=-=-
 
-#preencher na branch analise graficos
-#usar comandos de distribuicao de frequencia de sexo, grafico de colunas para 
-#faixa etaria por sexo, hist de altura, box plot de imc por sexo
-
+table(dados$sexo) 
+barplot(table(dados$faixa_etaria, dados$sexo), beside = TRUE, legend = TRUE )
+hist(dados$altura)
+boxplot(dados$imc ~ dados$sexo)
+        
 #-=-=-=analise descritiva com medidas descritivas=-=-=-
 
 #preencher na branch analise medidas
